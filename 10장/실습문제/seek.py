@@ -1,0 +1,10 @@
+infile = open("text_file/test.txt", "r+")
+str = infile.read(10)
+print("읽은 문자열: ", str)
+position = infile.tell()
+print("현재위치 : ",position)
+
+position = infile.seek(0)
+str = infile.read(0)
+print("읽은 문자열 : ", str)
+infile.close()
